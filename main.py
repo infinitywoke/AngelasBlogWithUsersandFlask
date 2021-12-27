@@ -13,9 +13,14 @@ from wtforms import BooleanField, StringField, PasswordField, validators, Submit
 from flask_wtf import Form
 from sqlalchemy import Table, Column, Integer, ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
+import os
 
 app = Flask(__name__)
+
+
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+
+
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
